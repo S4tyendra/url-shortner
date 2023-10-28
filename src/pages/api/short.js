@@ -11,7 +11,7 @@ export default async function handler(req, res) {
                 const { originalUrl } = req.body;
                 if (originalUrl && validUrl.isUri(originalUrl)) { // Check if it's a valid URL
                     const randomStr = getRandomString(5);
-                    const shortUrl = `https://your-shortener-domain.com/${randomStr}`;
+                    const shortUrl = `https://s.devh.in/${randomStr}`;
                     await db.collection("shortenedUrls").insertOne({
                         _id: randomStr,
                         originalUrl,
