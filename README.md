@@ -81,8 +81,7 @@ MONGODB_URI="your-mongodb-uri-here"
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is released into the public domain under the Unlicense. No restrictions apply. See the [UNLICENSE](LICENSE) file for details.
 
----
 
-This README provides an overview of the URL shortener project and includes a self-hosting guide. Make sure to replace placeholders like `your-username` and `your-mongodb-uri-here` with your specific details.
+# Thankyou!
