@@ -25,6 +25,8 @@ const Redirect = () => {
                 setShortenedUrl(data.shortUrl);
                 setLoading(false);
                 setLoaded(true);
+                setError('');
+
             } else {
                 const errorData = await response.json();
                 setError(errorData.error);
@@ -46,11 +48,19 @@ const Redirect = () => {
         setOriginalUrl('');
         setShortenedUrl('');
         setCopied(false);
+        setError('');
     }
 
-    const handleCopy = () => {
+    const handleCopy = async () => {
+        setLoading(true);
+        const tempInput = document.createElement("input");
+        tempInput.value = shortenedUrl;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        setLoading(false);
         setCopied(true);
-        // Logic to copy the shortened URL to the clipboard
     };
 
     return (<div className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
