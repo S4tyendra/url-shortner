@@ -118,8 +118,13 @@ const Redirect = () => {
                                                    className="bg-white text-black">
                                         Shorten a New URL
                                     </Button>) : (<></>)}
-                                {/*<Divider/>*/}
-
+                                <div className="flex items-center justify-center space-x-2">
+                                <Button className='mx-1 text-xl mt-10' onClick={
+                                    () => window.open('https://github.com/S4tyendra/url-shortner', '_blank')
+                                }>
+                                    <Icon icon="line-md:github-loop" className="h-8 w-8 m-1" /> GitHub Repo
+                                </Button>
+                                </div>
                             </div>
                         </div>
                     </div>
