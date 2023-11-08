@@ -15,7 +15,6 @@ export const Head = () => {
 				name="viewport"
 			/>
 			<link href="/favicon.ico" rel="icon" />
-			<script src="https://alwingulla.com/88/tag.min.js" data-zone="19343" async data-cfasync="false"></script>
 		</NextHead>
 	);
 };
