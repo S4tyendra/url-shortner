@@ -16,7 +16,7 @@ sudo -p "Enter your password to install the required libraries: " apt install -y
 
 # Download Anaconda installer
 echo "Downloading Anaconda..."
-curl -o https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh 
+curl -O https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh 
 
 # Install Anaconda
 echo "Installing Anaconda..."
