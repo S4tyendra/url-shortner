@@ -8,11 +8,11 @@ fi
 
 # Update package lists for upgrades and new package installations
 echo "Updating package lists..."
-sudo -p "Enter your password to install the required libraries: " apt update -y
+sudo -p "Enter your password to install the required libraries: " apt update -y > /dev/null
 
 # Install necessary dependencies
 echo "Installing dependencies..."
-sudo -p "Enter your password to install the required libraries: " apt install -y libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6 curl
+sudo -p "Enter your password to install the required libraries: " apt install -y libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6 curl > /dev/null
 
 # Download Anaconda installer
 echo "Downloading Anaconda..."
@@ -31,7 +31,7 @@ echo "Adding Anaconda to PATH..."
 echo 'export PATH="$HOME/anaconda3/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
-echo "Restart terminal or run `source ~/.bashrc`, `conda` and `anaconda-navigator` should be working! "
+echo "Restart terminal or run source ~/.bashrc, conda and anaconda-navigator should be working! "
 
 
 
